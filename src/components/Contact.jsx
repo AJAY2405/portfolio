@@ -8,7 +8,7 @@ function Contact() {
         method="POST"
         className='flex flex-col items-center justify-center gap-5 p-10 w-full max-w-[500px] bg-black rounded-xl shadow-xl shadow-indigo-700'
       >
-        <h1 className='text-4xl text-white font-bold'>Get in Touch</h1>
+        <h1 className='text-2xl text-white font-bold'>Contact Me</h1>
 
         <input
           type="text"

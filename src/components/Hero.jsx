@@ -1,7 +1,18 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function Hero() {
+  const roles = ["Web Developer", "Machine Learning", "Problem Solver [JAVA]"];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % roles.length);
+    }, 2000); // Rotate every 2 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
   return (
     <div id="home" className='px-16 flex min-h-screen w-full items-center justify-center py-28 md:px-32'>
       <div className="flex flex-col items-center justify-center gap-10 text-white">
@@ -13,11 +24,11 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <img
-            src="/Images/image.jpg" // ✅ use relative path from public folder
+            src="/Images/image.jpg"
             alt="Ajay Sahani"
-            className='w-[300px] h-[450px] cursor-pointer rounded-full shadow-xl shadow-indigo-900
+            className='w-[200px] h-[325px] cursor-pointer rounded-full shadow-xl shadow-indigo-900
               transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-indigo-600
-              md:w-[350px]'
+              md:w-[325px]'
           />
         </motion.div>
 
@@ -31,20 +42,43 @@ function Hero() {
           <h1 className='bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent text-5xl font-light md:text-7xl'>
             AJAY SAHANI
           </h1>
-          <h3 className='bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent text-2xl md:text-3xl'>
-            Web Developer
-          </h3>
-          <p className='md:text-base text-pretty text-sm text-white'>
-          Hi, I'm Ajay Sahani, a passionate and dedicated B.Tech student in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning. I’m currently studying at Guru Jambheshwar University of Science and Technology, Hisar, Haryana.
+
+          {/* Rotating Role Text - Left to Right Animation */}
+          <AnimatePresence mode="wait">
+            <motion.h3
+              key={roles[index]}
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 100 }}
+              transition={{ duration: 0.6 }}
+              className='bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent text-2xl md:text-3xl'
+            >
+              {roles[index]}
+            </motion.h3>
+          </AnimatePresence>
+
+          <p className="md:text-base text-pretty text-sm text-white">
+            As a Web Developer, I focus on building dynamic and responsive web applications using modern technologies. I specialize in front-end and back-end development, ensuring seamless user experiences. With a strong foundation in HTML, CSS, JavaScript, and frameworks like React and Node.js, I'm committed to creating high-performing, scalable websites and applications.
           </p>
-          <p className='md:text-base text-pretty text-sm text-white'>
-          I have a strong interest in building smart and scalable web applications. Alongside my core studies, I’m also exploring the MERN stack (MongoDB, Express.js, React, Node.js) to enhance my skills in full-stack development. I'm always eager to learn new technologies and take on challenges that help me grow as a developer.
+
+          <p className="md:text-base text-pretty text-sm text-white">
+            Machine Learning is the future, and I'm passionate about harnessing its power to create innovative solutions. I specialize in algorithms, data analysis, and building predictive models using Python and libraries like TensorFlow and Scikit-Learn. My aim is to solve complex problems and automate decision-making through intelligent systems.
           </p>
+
+          {/* Resume Button */}
+          <motion.a
+            href="/path/to/your/resume.pdf" // Replace with the actual link to your resume file
+            download="Ajay_Sahani_Resume.pdf"
+            className="mt-6 px-8 py-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white rounded-full text-lg font-medium transition-transform duration-300 hover:scale-105"
+          >
+            Download Resume
+          </motion.a>
+
         </motion.div>
 
       </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
