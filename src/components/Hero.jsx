@@ -26,9 +26,9 @@ function Hero() {
           <img
             src="/Images/image.jpg"
             alt="Ajay Sahani"
-            className='w-[200px] h-[325px] cursor-pointer rounded-full shadow-xl shadow-indigo-900
+            className='w-[225px] h-[250px] cursor-pointer rounded-full shadow-xl shadow-indigo-900
               transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-indigo-600
-              md:w-[325px]'
+              md:w-[250px]'
           />
         </motion.div>
 
@@ -67,7 +67,7 @@ function Hero() {
 
           {/* Resume Button */}
           <motion.a
-            href="/path/to/your/resume.pdf" // Replace with the actual link to your resume file
+            href="https://drive.google.com/file/d/10aNO-xjgiKdY0OaYHNx5Cn6STkyWfTjF/view?usp=drive_link" // Replace with the actual link to your resume file
             download="Ajay_Sahani_Resume.pdf"
             className="mt-6 px-8 py-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white rounded-full text-lg font-medium transition-transform duration-300 hover:scale-105"
           >
