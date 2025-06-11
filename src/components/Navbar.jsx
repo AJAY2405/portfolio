@@ -40,12 +40,12 @@ function Navbar() {
         <li className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100'>
           <BsYoutube />
         </li>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/ajay-sahani-464a38298/" target="_blank" rel="noopener noreferrer">
           <li className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100'>
             <BsLinkedin />
           </li>
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/AJAYSAHANI97389" target="_blank" rel="noopener noreferrer">
           <li className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-sky-400 hover:opacity-100'>
             <BsTwitter />
           </li>
