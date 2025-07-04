@@ -113,14 +113,14 @@ const projectsData = [
     title: "Currency Converter",
     description: "Real-time currency converter using exchange rate API. Converts between various currencies with a clean and fast UI.",
     technologies: ["API", "HTML", "CSS", "JAVASCRIPT"],
-    link: "https://your-currency-converter-link.com"
+    link: "https://currency-five-pearl.vercel.app/"
   },
   {
     image: "/Images/5.png",
     title: "E-commerce Website",
     description: "Full-stack e-commerce site using Node.js, Express, and MongoDB with product browsing, cart, and secure checkout.",
     technologies: ["Node.js", "Express.js", "MongoDB","React"],
-    link: "https://your-ecommerce-website-link.com"
+    link: "https://e-commerce-frontend-phi-eight.vercel.app/"
   }
 ];
 

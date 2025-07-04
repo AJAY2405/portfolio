@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function Hero() {
-  const roles = ["Web Developer", "Machine Learning", "Problem Solver [JAVA]"];
+  const roles = ["Web Developer", "Machine Learning", "Problem Solver [JAVA]","Power BI"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
