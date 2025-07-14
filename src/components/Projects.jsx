@@ -96,8 +96,8 @@ import { motion } from 'framer-motion';
 const projectsData = [
   {
     image: "/Images/2.png",
-    title: "TODO APP",
-    description: "This to-do app allows users to create, edit, and delete tasks with a simple interface. Built using HTML, CSS, and JavaScript.",
+    title: "Tic Tac Toe Game",
+    description: "This Tic Tac Toe game allows two players to take turns marking X and O on a 3×3 grid. The game detects wins, draws, and displays results in real-time. Built using HTML, CSS, and JavaScript with a clean and interactive user interface.",
     technologies: ["HTML", "CSS", "JAVASCRIPT"],
     link: "https://tictocto-mhuq.vercel.app/"
   },
