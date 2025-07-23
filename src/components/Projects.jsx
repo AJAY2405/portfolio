@@ -204,13 +204,15 @@ const ProjectCard = ({ project }) => (
 
 function Projects() {
   return (
+    
     <div
       id="projects"
       className='flex min-h-screen w-full flex-col items-center justify-center gap-20 p-4 md:px-14 md:py-24'
     >
+
       {/* Web Development Projects */}
       <ScrollReveal>
-        <h1 className='text-4xl font-light text-white md:text-6xl'>Web Development [Projects]</h1>
+        <h2 className='text-4xl font-light text-white md:text-6xl'>Web Development [Projects]</h2>
       </ScrollReveal>
       <div className='flex w-full max-w-[1000px] flex-col gap-16 text-white'>
         {webDevProjects.map((project, index) => (
@@ -220,7 +222,7 @@ function Projects() {
 
       {/* Data Analyst Projects */}
       <ScrollReveal>
-        <h1 className='text-4xl font-light text-white md:text-6xl pt-20'>Data Analyst [Projects]</h1>
+        <h2 className='text-4xl font-light text-white md:text-6xl pt-20'>Data Analyst [Projects]</h2>
       </ScrollReveal>
       <div className='flex w-full max-w-[1000px] flex-col gap-16 text-white'>
         {dataAnalystProjects.map((project, index) => (
