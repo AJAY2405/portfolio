@@ -89,16 +89,15 @@
 // }
 
 // export default Projects;
-
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const projectsData = [
+const webDevProjects = [
   {
     image: "/Images/2.png",
     title: "Tic Tac Toe Game",
-    description: "This Tic Tac Toe game allows two players to take turns marking X and O on a 3×3 grid. The game detects wins, draws, and displays results in real-time. Built using HTML, CSS, and JavaScript with a clean and interactive user interface.",
-    technologies: ["HTML", "CSS", "JAVASCRIPT"],
+    description: "This Tic Tac Toe game allows two players to take turns marking X and O on a 3×3 grid. The game detects wins, draws, and displays results in real-time. Built using HTML, CSS, and JavaScript with a clean and interactive UI.",
+    technologies: ["HTML", "CSS", "JavaScript"],
     link: "https://tictocto-mhuq.vercel.app/"
   },
   {
@@ -112,16 +111,49 @@ const projectsData = [
     image: "/Images/4.png",
     title: "Currency Converter",
     description: "Real-time currency converter using exchange rate API. Converts between various currencies with a clean and fast UI.",
-    technologies: ["API", "HTML", "CSS", "JAVASCRIPT"],
+    technologies: ["API", "HTML", "CSS", "JavaScript"],
     link: "https://currency-five-pearl.vercel.app/"
   },
   {
     image: "/Images/5.png",
     title: "E-commerce Website",
     description: "Full-stack e-commerce site using Node.js, Express, and MongoDB with product browsing, cart, and secure checkout.",
-    technologies: ["Node.js", "Express.js", "MongoDB","React"],
+    technologies: ["Node.js", "Express.js", "MongoDB", "React"],
     link: "https://e-commerce-frontend-phi-eight.vercel.app/"
   }
+];
+
+const dataAnalystProjects = [
+ {
+  image: "/Images/olaproject.png",
+  title: "OLA Ride Booking Dashboard",
+  description: "A Power BI dashboard built to analyze OLA ride data between 2nd July to 28th July 2024. It presents insights on booking trends, cancellations by driver and customer, ride revenue by payment method, top customers, and satisfaction ratings. Data was cleaned and transformed using Excel and SQL, and visualized using Power BI.",
+  technologies: ["Power BI", "Excel", "SQL"],
+  link: "https://github.com/AJAY2405/Ola-Project" // Replace with actual link if hosted
+},
+{
+  image: "/Images/madhav.png",
+  title: "E-Commerce Sales Dashboard",
+  description: "This Power BI dashboard provides detailed insights into e-commerce performance, including total sales amount, profit, quantity sold, and average order value. It visualizes state-wise performance, customer-wise revenue, category and sub-category contributions, and monthly profit trends. The dashboard supports slicers for quarter and state selection to enable dynamic filtering.",
+  technologies: ["Power BI", "Excel"],
+  link: "https://github.com/AJAY2405/Madhav_store_dashboard" // Replace with actual link
+},
+
+{
+  image: "/Images/super.png",
+  title: "Super Store Sales Dashboard",
+  description: "An advanced Power BI dashboard that analyzes sales, profit, quantity, and shipping performance across different segments and categories. It includes geographic insights, yearly trends, and customer segment breakdowns. A second dashboard provides a 15-day sales forecast using historical data trends. Built using Excel for data sourcing and Power BI for modeling and visualization.",
+  technologies: ["Power BI", "Excel"],
+  link: "https://github.com/AJAY2405/PowerBI-_project" // Replace with actual Power BI report link
+},
+  {
+  image: "/Images/python+sql.png",
+  title: "Data Analysis with Python & SQL",
+  description: "Performed end-to-end data analysis using SQL for data extraction and Python for cleaning, exploration, and visualization. Utilized libraries like Pandas, Matplotlib, and Seaborn to generate insights from real-world datasets. Focused on querying large datasets, performing joins, and visualizing trends to support data-driven decisions.",
+  technologies: ["Python", "SQL", "Pandas", "Matplotlib"],
+  link: "https://github.com/AJAY2405/Python-SQL" // Replace with actual GitHub or nbviewer link
+}
+
 ];
 
 const ScrollReveal = ({ children }) => (
@@ -150,7 +182,7 @@ const ProjectCard = ({ project }) => (
           <div className='text-xl font-semibold'>{project.title}</div>
           <p className='text-gray-400'>{project.description}</p>
         </div>
-        <div className='flex flex-wrap gap-5'>
+        <div className='flex flex-wrap gap-3'>
           {project.technologies.map((tech, index) => (
             <span key={index} className='rounded-lg bg-black px-3 py-1 text-sm'>
               {tech}
@@ -174,13 +206,24 @@ function Projects() {
   return (
     <div
       id="projects"
-      className='flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-14 md:py-24'
+      className='flex min-h-screen w-full flex-col items-center justify-center gap-20 p-4 md:px-14 md:py-24'
     >
+      {/* Web Development Projects */}
       <ScrollReveal>
-        <h1 className='text-4xl font-light text-white md:text-6xl'>My Projects</h1>
+        <h1 className='text-4xl font-light text-white md:text-6xl'>Web Development [Projects]</h1>
       </ScrollReveal>
       <div className='flex w-full max-w-[1000px] flex-col gap-16 text-white'>
-        {projectsData.map((project, index) => (
+        {webDevProjects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
+      </div>
+
+      {/* Data Analyst Projects */}
+      <ScrollReveal>
+        <h1 className='text-4xl font-light text-white md:text-6xl pt-20'>Data Analyst [Projects]</h1>
+      </ScrollReveal>
+      <div className='flex w-full max-w-[1000px] flex-col gap-16 text-white'>
+        {dataAnalystProjects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
       </div>
