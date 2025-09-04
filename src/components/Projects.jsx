@@ -9,8 +9,7 @@ const webDevProjects = [
     description:
       "A full-stack MERN Job Portal designed for educators to find teaching opportunities in schools. Features include user authentication, recruiter/company onboarding, job posting, and job applications. Images like resumes or company logos are securely stored using Cloudinary.",
     technologies: ["MongoDB", "Express.js", "React", "Node.js", "Cloudinary"],
-    frontendLink: "https://github.com/AJAY2405/online-frontend",
-    backendLink: "https://github.com/AJAY2405/online_backend"
+    frontendLink: "https://online-frontend-three.vercel.app/",
   },
   {
     image: "/Images/3.png",
@@ -18,7 +17,7 @@ const webDevProjects = [
     description:
       "This React Vite app helps users securely create and manage passwords. Features strong password generation and modern UI.",
     technologies: ["React", "Tailwind"],
-    link: "https://copypassword.vercel.app/"
+    frontendLink: "https://copypassword.vercel.app/",
   },
   {
     image: "/Images/4.png",
@@ -26,7 +25,7 @@ const webDevProjects = [
     description:
       "Real-time currency converter using exchange rate API. Converts between various currencies with a clean and fast UI.",
     technologies: ["API", "HTML", "CSS", "JavaScript"],
-    link: "https://currency-five-pearl.vercel.app/"
+    frontendLink: "https://currency-five-pearl.vercel.app/",
   },
   {
     image: "/Images/5.png",
@@ -34,17 +33,17 @@ const webDevProjects = [
     description:
       "Full-stack e-commerce site using Node.js, Express, and MongoDB with product browsing, cart, and secure checkout.",
     technologies: ["Node.js", "Express.js", "MongoDB", "React", "Cloudinary"],
-    link: "https://e-commerce-frontend-phi-eight.vercel.app/"
+    frontendLink: "https://e-commerce-frontend-phi-eight.vercel.app/",
   }
 ];
 
-// ✅ Data Analyst Projects
+// ✅ Data Analyst Projects (GitHub only, no frontend links)
 const dataAnalystProjects = [
   {
     image: "/Images/olaproject.png",
     title: "OLA Ride Booking Dashboard",
     description:
-      "A Power BI dashboard built to analyze OLA ride data between 2nd July to 28th July 2024. It presents insights on booking trends, cancellations by driver and customer, ride revenue by payment method, top customers, and satisfaction ratings. Data was cleaned and transformed using Excel and SQL, and visualized using Power BI.",
+      "A Power BI dashboard built to analyze OLA ride data between 2nd July to 28th July 2024. It presents insights on booking trends, cancellations by driver and customer, ride revenue by payment method, top customers, and satisfaction ratings.",
     technologies: ["Power BI", "Excel", "SQL"],
     link: "https://github.com/AJAY2405/Ola-Project"
   },
@@ -52,7 +51,7 @@ const dataAnalystProjects = [
     image: "/Images/madhav.png",
     title: "E-Commerce Sales Dashboard",
     description:
-      "This Power BI dashboard provides detailed insights into e-commerce performance, including total sales amount, profit, quantity sold, and average order value. It visualizes state-wise performance, customer-wise revenue, category and sub-category contributions, and monthly profit trends.",
+      "This Power BI dashboard provides detailed insights into e-commerce performance, including total sales amount, profit, quantity sold, and average order value.",
     technologies: ["Power BI", "Excel"],
     link: "https://github.com/AJAY2405/Madhav_store_dashboard"
   },
@@ -60,18 +59,18 @@ const dataAnalystProjects = [
     image: "/Images/super.png",
     title: "Super Store Sales Dashboard",
     description:
-      "An advanced Power BI dashboard that analyzes sales, profit, quantity, and shipping performance across different segments and categories. It includes geographic insights, yearly trends, and customer segment breakdowns.",
+      "An advanced Power BI dashboard that analyzes sales, profit, quantity, and shipping performance across different segments and categories.",
     technologies: ["Power BI", "Excel"],
     link: "https://github.com/AJAY2405/PowerBI-_project"
   },
- {
-  image: "/Images/blinkit.png",  // ✅ Rename uploaded image to this in /public/Images
-  title: "Blinkit Sales Dashboard",
-  description: "An interactive Power BI dashboard analyzing Blinkit’s sales, outlet distribution, and product performance. It includes dynamic filters, outlet establishment trends, product type comparisons, and key KPIs like total sales, item count, and average ratings. Built using Excel for data transformation and Power BI for advanced visuals and insights.",
-  technologies: ["Power BI", "Excel"],
-  link: "https://github.com/AJAY2405/BLINKIT/tree/main/BLINKIT" // 🔁 Update with actual link if hosted
-}
-
+  {
+    image: "/Images/blinkit.png",
+    title: "Blinkit Sales Dashboard",
+    description:
+      "An interactive Power BI dashboard analyzing Blinkit’s sales, outlet distribution, and product performance.",
+    technologies: ["Power BI", "Excel"],
+    link: "https://github.com/AJAY2405/BLINKIT/tree/main/BLINKIT"
+  }
 ];
 
 // ✅ Scroll animation wrapper
@@ -125,27 +124,17 @@ const ProjectCard = ({ project }) => (
               rel="noopener noreferrer"
               className="px-4 py-2 bg-gradient-to-r from-green-500 to-blue-500 text-sm rounded-full font-medium transition-transform duration-300 hover:scale-105 w-max"
             >
-              Frontend
+              Live Project
             </a>
           )}
-          {project.backendLink && (
-            <a
-              href={project.backendLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-sm rounded-full font-medium transition-transform duration-300 hover:scale-105 w-max"
-            >
-              Backend
-            </a>
-          )}
-          {!project.frontendLink && !project.backendLink && project.link && (
+          {!project.frontendLink && project.link && (
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-gradient-to-r from-blue-500 to-pink-500 text-sm rounded-full font-medium transition-transform duration-300 hover:scale-105 w-max"
             >
-              View Project
+              View on GitHub
             </a>
           )}
         </div>
