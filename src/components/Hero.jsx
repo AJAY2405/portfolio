@@ -67,7 +67,7 @@ function Hero() {
 
           {/* Resume Button */}
           <motion.a
-            href="https://res.cloudinary.com/dfxr85udp/image/upload/v1756962925/Ajay_Sahani_7_orgjh4.pdf" // Replace with the actual link to your resume file
+            href="https://res.cloudinary.com/dfxr85udp/image/upload/v1762774311/Ajay-MERN_Resume_kzfely.pdf" // Replace with the actual link to your resume file
             download="Ajay_Sahani_Resume.pdf"
             className="mt-6 px-8 py-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white rounded-full text-lg font-medium transition-transform duration-300 hover:scale-105"
           >
