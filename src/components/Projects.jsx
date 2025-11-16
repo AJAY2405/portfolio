@@ -13,11 +13,11 @@ const webDevProjects = [
   },
   {
     image: "/Images/3.png",
-    title: "Password Generator",
+    title: "Coaching Management System",
     description:
-      "This React Vite app helps users securely create and manage passwords. Features strong password generation and modern UI.",
-    technologies: ["React", "Tailwind"],
-    frontendLink: "https://copypassword.vercel.app/",
+      "A full-stack MERN platform for coaching institutes featuring secure authentication, role-based access, admin-controlled test creation, student result management, notice board system, and PDF notes upload with Cloudinary.",
+    technologies: ["MongoDB", "Express", "React", "Node.js", "Tailwind", "Cloudinary"],
+    frontendLink: "https://exam-frontend-lilac.vercel.app/",
   },
   {
     image: "/Images/4.png",
