@@ -26,7 +26,7 @@ function Hero() {
           <img
             src="/Images/image3.jpg"
             alt="Ajay Sahani"
-            className='w-[108px] h-[120px] cursor-pointer rounded-full shadow-xl shadow-indigo-900
+            className='w-[115px] h-[130px] cursor-pointer rounded-full shadow-xl shadow-indigo-900
               transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-indigo-600
               md:w-[100px]'
           />

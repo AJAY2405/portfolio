@@ -50,7 +50,7 @@ function Navbar() {
             <BsTwitter />
           </li>
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/AJAY2405?tab=repositories" target="_blank" rel="noopener noreferrer">
           <li className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-white hover:opacity-100'>
             <BsGithub />
           </li>
