@@ -1,8 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Hero() {
-  const roles = ["Web Developer", "Machine Learning", "Problem Solver [JAVA]","Power BI"];
+  const roles = [
+    "Web Developer",
+    "Machine Learning",
+    "Problem Solver [JAVA]",
+    "Power BI",
+  ];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -14,9 +19,11 @@ function Hero() {
   }, []);
 
   return (
-    <div id="home" className='px-16 flex min-h-screen w-full items-center justify-center py-28 md:px-32'>
+    <div
+      id="home"
+      className="px-16 flex min-h-screen w-full items-center justify-center py-28 md:px-32"
+    >
       <div className="flex flex-col items-center justify-center gap-10 text-white">
-
         {/* Animated Image */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -26,9 +33,9 @@ function Hero() {
           <img
             src="/Images/image3.jpg"
             alt="Ajay Sahani"
-            className='w-[110px] h-[130px] cursor-pointer rounded-full shadow-xl shadow-indigo-900
+            className="w-[110px] h-[130px] cursor-pointer rounded-full shadow-xl shadow-indigo-900
               transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-indigo-600
-              md:w-[120px]  md:h-[130px]  '
+              md:w-[120px]  md:h-[130px]  "
           />
         </motion.div>
 
@@ -37,9 +44,9 @@ function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className='flex max-w-[600px] flex-col items-center justify-center gap-3 text-center'
+          className="flex max-w-[600px] flex-col items-center justify-center gap-3 text-center"
         >
-          <h1 className='bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent text-5xl font-light md:text-7xl'>
+          <h1 className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent text-5xl font-light md:text-7xl">
             AJAY SAHANI
           </h1>
 
@@ -51,18 +58,29 @@ function Hero() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
               transition={{ duration: 0.6 }}
-              className='bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent text-2xl md:text-3xl'
+              className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent text-2xl md:text-3xl"
             >
               {roles[index]}
             </motion.h3>
           </AnimatePresence>
 
           <p className="md:text-base text-pretty text-sm text-white">
-            As a Web Developer, I focus on building dynamic and responsive web applications using modern technologies. I specialize in front-end and back-end development, ensuring seamless user experiences. With a strong foundation in HTML, CSS, JavaScript, and frameworks like React and Node.js, I'm committed to creating high-performing, scalable websites and applications.
+            I am a Full Stack Developer specializing in building scalable and
+            responsive web applications using the MERN stack (MongoDB,
+            Express.js, React, and Node.js). I enjoy developing end-to-end
+            solutions including RESTful APIs, authentication systems, and modern
+            user interfaces that provide a smooth user experience. I focus on
+            writing clean, efficient code and building real-world applications
+            that solve practical problems.
           </p>
 
           <p className="md:text-base text-pretty text-sm text-white">
-            Machine Learning is the future, and I'm passionate about harnessing its power to create innovative solutions. I specialize in algorithms, data analysis, and building predictive models using Python and libraries like TensorFlow and Scikit-Learn. My aim is to solve complex problems and automate decision-making through intelligent systems.
+            Along with web development, I am also interested in Machine Learning
+            and Data Analytics. I enjoy working with data, analyzing patterns,
+            and building intelligent solutions using Python, Power BI, and
+            analytical tools. My goal is to combine software development with
+            data-driven insights to create smarter and more impactful
+            applications.
           </p>
 
           {/* Resume Button */}
@@ -73,9 +91,7 @@ function Hero() {
           >
             Download Resume
           </motion.a>
-
         </motion.div>
-
       </div>
     </div>
   );
