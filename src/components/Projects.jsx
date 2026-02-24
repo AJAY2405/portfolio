@@ -2,12 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // ✅ Web Development Projects
+// ✅ Web Development Projects
 const webDevProjects = [
   {
     image: "/Images/job.png",
     title: "Job Portal for Educators",
     description:
-      "A full-stack MERN Job Portal designed for educators to find teaching opportunities in schools.",
+      "Developed a full-stack MERN Job Portal with recruiter and candidate dashboards using role-based access. Implemented JWT authentication, RESTful APIs, and Cloudinary for secure resume and logo storage.",
     technologies: ["MongoDB", "Express.js", "React", "Node.js", "Cloudinary"],
     liveLink: "https://online-frontend-three.vercel.app/",
     frontendGithub: "https://github.com/AJAY2405/online-frontend",
@@ -17,7 +18,7 @@ const webDevProjects = [
     image: "/Images/3.png",
     title: "Coaching Management System",
     description:
-      "A full-stack MERN platform for coaching institutes featuring authentication and test management.",
+      "Engineered a role-based MERN platform with Teacher and Student dashboards for test management and notes sharing. Implemented JWT authentication, RESTful APIs, and secure file handling with Cloudinary.",
     technologies: [
       "MongoDB",
       "Express",
@@ -34,7 +35,7 @@ const webDevProjects = [
     image: "/Images/4.png",
     title: "Currency Converter",
     description:
-      "Real-time currency converter using exchange rate API with a fast UI.",
+      "Built a real-time currency converter using exchange rate APIs with a responsive and fast user interface for instant currency calculations.",
     technologies: ["API", "HTML", "CSS", "JavaScript"],
     liveLink: "https://currency-five-pearl.vercel.app/",
     frontendGithub: "https://github.com/AJAY2405/CURRENCY",
@@ -43,7 +44,7 @@ const webDevProjects = [
     image: "/Images/5.png",
     title: "E-commerce Website",
     description:
-      "Full-stack e-commerce site with product browsing, cart, and secure checkout.",
+      "Built a full-stack e-commerce platform with product management, cart functionality, and admin controls. Integrated Razorpay payments, JWT-based authentication, and Cloudinary image uploads using Multer.",
     technologies: ["Node.js", "Express.js", "MongoDB", "React", "Cloudinary"],
     liveLink: "https://e-commerce-frontend-phi-eight.vercel.app/",
     frontendGithub: "https://github.com/AJAY2405/e-commerce-frontend",
@@ -53,13 +54,21 @@ const webDevProjects = [
     image: "/Images/E-learning.png",
     title: "E-Learning Website",
     description:
-      "Full-stack E-Learning site with product browsing, cart, and secure checkout.",
-    technologies: ["Node.js", "Express.js", "MongoDB", "React", "Cloudinary","NodeMailer"],
+      "Developed a MERN-based E-Learning platform with course browsing, authentication, and secure backend APIs. Implemented email notifications using NodeMailer and media storage using Cloudinary.",
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "React",
+      "Cloudinary",
+      "NodeMailer",
+    ],
     liveLink: "https://portfolio-ajay-three.vercel.app/",
     frontendGithub: "https://github.com/AJAY2405/MDA-Learning",
     backendGithub: "https://github.com/AJAY2405/E-Learning-Backend",
   },
 ];
+
 
 // ✅ Data Analyst Projects
 const dataAnalystProjects = [
@@ -67,7 +76,7 @@ const dataAnalystProjects = [
     image: "/Images/olaproject.png",
     title: "OLA Ride Booking Dashboard",
     description:
-      "Power BI dashboard analyzing booking trends, cancellations, and revenue insights.",
+      "Built an interactive Power BI dashboard analyzing ride bookings, cancellations, revenue trends, and customer behavior to support data-driven decisions.",
     technologies: ["Power BI", "Excel", "SQL"],
     github: "https://github.com/AJAY2405/Ola-Project",
   },
@@ -75,7 +84,7 @@ const dataAnalystProjects = [
     image: "/Images/madhav.png",
     title: "E-Commerce Sales Dashboard",
     description:
-      "Dashboard providing insights into sales amount, profit, and quantity sold.",
+      "Designed a Power BI dashboard providing insights into sales amount, profit, and quantity sold across categories for business performance analysis.",
     technologies: ["Power BI", "Excel"],
     github: "https://github.com/AJAY2405/Madhav_store_dashboard",
   },
@@ -83,7 +92,7 @@ const dataAnalystProjects = [
     image: "/Images/super.png",
     title: "Super Store Sales Dashboard",
     description:
-      "Advanced sales and shipping performance analysis dashboard.",
+      "Created a Power BI dashboard analyzing sales performance, shipping trends, and regional performance to identify business growth opportunities.",
     technologies: ["Power BI", "Excel"],
     github: "https://github.com/AJAY2405/PowerBI-_project",
   },
@@ -91,7 +100,7 @@ const dataAnalystProjects = [
     image: "/Images/blinkit.png",
     title: "Blinkit Sales Dashboard",
     description:
-      "Interactive Power BI dashboard analyzing Blinkit's sales performance.",
+      "Developed an interactive dashboard analyzing Blinkit’s sales, product performance, and revenue insights using Power BI and Excel.",
     technologies: ["Power BI", "Excel"],
     github: "https://github.com/AJAY2405/BLINKIT/tree/main/BLINKIT",
   },
