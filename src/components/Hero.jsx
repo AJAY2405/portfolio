@@ -31,11 +31,11 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <img
-            src="/Images/image3.jpg"
+            src="/Images/image31.jpg"
             alt="Ajay Sahani"
-            className="w-[110px] h-[130px] cursor-pointer rounded-full shadow-xl shadow-indigo-900
+            className="w-[100px] h-[120px] cursor-pointer rounded-full shadow-xl shadow-indigo-900
               transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-indigo-600
-              md:w-[120px]  md:h-[130px]  "
+              md:w-[110px]  md:h-[120px]  "
           />
         </motion.div>
 
