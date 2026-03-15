@@ -27,6 +27,18 @@ function Certificates() {
       date: "12 Feb 2026",
       link: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-8de4b1f3-2a46-4622-afac-43fb4a8cf194.pdf",
     },
+    {
+      title: "Konark [Crown For Code]",
+      issuer: "PDUIIC/K26/CFC/210",
+      date: "17 Feb 2026",
+      link: "https://res.cloudinary.com/dfxr85udp/image/upload/v1773588144/Konark_26_Participation_Certificate_162_1_yaditk.pdf",
+    },
+    {
+      title: "Smart GJUS&T Hackathon 2025",
+      issuer: "PDUIIC/SIH25/PR/T37/222",
+      date: "18 September 2025",
+      link: "https://res.cloudinary.com/dfxr85udp/image/upload/v1773588151/Hackathon_certificate_iazzhy.pdf",
+    },
   ];
 
   return (
