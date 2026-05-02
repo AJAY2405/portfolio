@@ -2,13 +2,16 @@ import React from 'react';
 
 function Contact() {
   return (
+    
     <div id="contacts" className='flex min-h-[70vh] w-full items-center justify-center  duration-300 hover:scale-105 '>
+
+  
       <form
         action="https://formsubmit.co/rahul372602@gmail.com"
         method="POST"
-        className='flex flex-col items-center justify-center gap-5 p-10 w-full max-w-[500px] bg-black rounded-xl shadow-xl shadow-indigo-700'
+        className='flex flex-col items-center justify-center gap-5 p-10 w-full max-w-[500px] bg-black rounded-xl shadow-xl shadow-white-700'
       >
-        <h1 className='text-2xl text-white font-bold'>Contact Me</h1>
+        <h1 className='text-2xl text-white font-bold'>ConMe</h1>
 
         <input
           type="text"
@@ -34,7 +37,7 @@ function Contact() {
 
         <button
           type="submit"
-          className='rounded-lg border border-indigo-600 bg-indigo-500 px-5 py-3 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-indigo-600'
+          className='rounded-lg border border-white-600 bg-white-500 px-5 py-3 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-white-600'
         >
           Send Message
         </button>
