@@ -145,7 +145,7 @@ function Hero() {
             alt="Ajay Sahani"
             className="w-[110px] h-[110px] md:w-[130px] md:h-[130px] rounded-full object-cover
             border-2 border-white/20 shadow-lg shadow-white/10
-            transition-all duration-300 hover:scale-110 hover:shadow-white/30"
+            transition-all duration-300 hover:scale-110 hover:shadow-white/30 mt-20"
           />
         </motion.div>
 
