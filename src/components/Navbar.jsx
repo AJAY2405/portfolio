@@ -161,7 +161,7 @@ function Navbar() {
 
       {/* Desktop Nav Links */}
       <ul className='hidden md:flex gap-10 text-sm tracking-wider'>
-        {["HOME", "TECH", "PROJECTS", "CONTACT"].map((item, i) => (
+        {["HOME", "TECH", "PROJECTS", "CONTACTS"].map((item, i) => (
           <a key={i} href={`#${item.toLowerCase()}`}>
             <li className='opacity-70 hover:opacity-100 hover:text-gray-300 transition duration-300'>
               {item}
@@ -218,7 +218,7 @@ function Navbar() {
 
           {/* Links */}
           <ul className='flex flex-col gap-6 text-lg'>
-            {["HOME", "TECH", "PROJECTS", "CONTACT"].map((item, i) => (
+            {["HOME", "TECH", "PROJECTS", "CONTACTS"].map((item, i) => (
               <a key={i} href={`#${item.toLowerCase()}`} onClick={menuOpen}>
                 <li className='text-gray-300 hover:text-white transition'>
                   {item}
